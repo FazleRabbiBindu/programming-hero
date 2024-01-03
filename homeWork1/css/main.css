@@ -1,0 +1,14 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{ color:blueviolet;}
+
+.about{
+    background-color: rgb(100, 14, 180);
+    border: 5px solid;
+    /* border-color: blue; */
+    border-radius: 10px;
+    margin: 10px 100px 50px 50px;
+}
+#title{color: white;}
+#description{ color: white;}
