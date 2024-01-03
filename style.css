@@ -1,0 +1,23 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: cadetblue;
+}
+
+.content{
+    background: fixed;
+    border: 5px solid;
+    border-radius: 5px;
+    border-color: blanchedalmond;
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 60px;
+    padding-left: 10px;
+}
+
+.title{
+    color: aliceblue;
+}
+
+.details{
+    color: aliceblue;
+}
