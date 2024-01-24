@@ -2,66 +2,240 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biker Zone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biker Zone</title>
 
-    <!-- google fonts poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
-        rel="stylesheet">
+  <!-- google fonts poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
 
-    <!-- daisy ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- custom styles -->
+  <style>
+    .font-poppins {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+
+  <!-- tailwind custom classes -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary': '#E76F51',
+            'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
-<body>
-    <header class="md:container md:mx-auto">
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="flex-1">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Home</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>News</a></li>
-                            <li><a>Contact</a></li>
-                        </ul>
-                    </div>
-                    <a class="btn btn-ghost text-xl">Biker Zone</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>News</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                </div>
-                <div class="">
-                    <a class="btn bg-[#E76F51]">Login</a>
-                </div>
+<body class="font-poppins">
+  <div class="flex justify-center m-3">
+    <a class=" btn btn-primary btn-outline w-15" href="../">Home</a>
+</div>
+  <header class="md:container md:mx-auto">
+    <nav>
+      <div class="navbar bg-white">
+        <div class="flex-1">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-        </nav>
-    </header>
-    <main class="md:container md:mx-auto">
+            <ul tabindex="0"
+              class="font-medium text-base menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl font-bold p-0">Biker Zone</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="font-medium text-base menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <a class="btn bg-bike-primary text-white">Login</a>
+        </div>
+      </div>
+    </nav>
+    <!-- slider section -->
+    <div class="carousel lg:h-[550px] w-full bg-bike-primary-bg">
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="p-4 lg:p-24 flex flex-col lg:flex-row gap-20">
+          <div class="flex-1 space-y-7">
+            <p class="text-5xl font-semibold">
+              Ride-on R15 V4 with Smile
+            </p>
+            <p class="text-base font-light">
+              Experience joy on the road with the sleek R15 V4 motorcycle. Elevate your ride and showcase a genuine
+              smile with every thrilling journey.
+            </p>
+            <button class="btn bg-bike-primary text-white uppercase">Purchase</button>
+          </div>
+          <div class="flex-1">
+            <img src="./assets/images/slider/bike1.png" class=" items-center" />
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="p-4 lg:p-24 flex flex-col lg:flex-row gap-20">
+          <div class="flex-1 space-y-7">
+            <p class="text-5xl font-semibold">
+              Ride-on R15 V4 with Smile
+            </p>
+            <p class="text-base font-light">
+              Experience joy on the road with the sleek R15 V4 motorcycle. Elevate your ride and showcase a genuine
+              smile with every thrilling journey.
+            </p>
+            <button class="btn bg-bike-primary text-white uppercase">Purchase</button>
+          </div>
+          <div class="flex-1">
+            <img src="./assets/images/slider/bike2.png" class=" items-center" />
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="p-4 lg:p-24 flex flex-col lg:flex-row gap-20">
+          <div class="flex-1 space-y-7">
+            <p class="text-5xl font-semibold">
+              Ride-on R15 V4 with Smile
+            </p>
+            <p class="text-base font-light">
+              Experience joy on the road with the sleek R15 V4 motorcycle. Elevate your ride and showcase a genuine
+              smile with every thrilling journey.
+            </p>
+            <button class="btn bg-bike-primary text-white uppercase">Purchase</button>
+          </div>
+          <div class="flex-1">
+            <img src="./assets/images/slider/bike3.png" class=" items-center" />
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <div class="p-4 lg:p-24 flex flex-col lg:flex-row gap-20">
+          <div class="flex-1 space-y-7">
+            <p class="text-5xl font-semibold">
+              Ride-on R15 V4 with Smile
+            </p>
+            <p class="text-base font-light">
+              Experience joy on the road with the sleek R15 V4 motorcycle. Elevate your ride and showcase a genuine
+              smile with every thrilling journey.
+            </p>
+            <button class="btn bg-bike-primary text-white uppercase">Purchase</button>
+          </div>
+          <div class="flex-1">
+            <img src="./assets/images/slider/bike4.png" class=" items-center" />
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
 
-    </main>
-    <footer>
+    <!-- Featured section -->
+    <section class="mt-40 text-center">
+      <div class=" flex flex-col flex-wrap">
+        <h3 class="font-extrabold text-6xl">Featured Bikes In This Year</h3>
+        <h6 class="text-sm text-bike-primary font-semibold m-3">Best bike collection</h6>
+        <hr class="mx-auto mt-4 w-16 border-t-2 border-bike-primary m-5">
 
-    </footer>
+      </div>
+      <div class="justify-center flex flex-row flex-wrap gap-5">
+        <img class="" src="./assets/images/others/feature-bike.png">
+        <img class="" src="./assets/images/others/feature-bike.png">
+        <img class="" src="./assets/images/others/feature-bike.png">
+      </div>
+    </section>
+
+    <!-- latest news -->
+    <section class="mx-40 gap-5 justify-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- card one -->
+      <div class="card w-80 p-5">
+        <div class="card-body">
+          <figure>
+            <img class="w-auto" src="./assets/images/others/latest1.png" alt="">
+          </figure>
+          <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+          <p>Sleek, powerful, and distinctive – the Ducati XDIAVEL S-73 defines luxury on two wheels with unparalleled
+            performance and style.</p>
+        </div>
+        <div class="card-actions justify-start">
+          <button class="btn bg-bike-primary text-white font-medium text-lg">Read More</button>
+        </div>
+      </div>
+
+      <!-- card one -->
+      <div class="card w-80 p-5">
+        <div class="card-body">
+          <figure>
+            <img src="./assets/images/others/latest1.png" alt="">
+          </figure>
+          <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+          <p>Sleek, powerful, and distinctive – the Ducati XDIAVEL S-73 defines luxury on two wheels with unparalleled
+            performance and style.</p>
+        </div>
+        <div class="card-actions justify-start">
+          <button class="btn bg-bike-primary text-white font-medium text-lg">Read More</button>
+        </div>
+      </div>
+      <!-- card one -->
+      <div class="card w-80 p-5">
+        <div class="card-body">
+          <figure>
+            <img src="./assets/images/others/latest1.png" alt="">
+          </figure>
+          <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+          <p>Sleek, powerful, and distinctive – the Ducati XDIAVEL S-73 defines luxury on two wheels with unparalleled
+            performance and style.</p>
+        </div>
+        <div class="card-actions justify-start">
+          <button class="btn bg-bike-primary text-white font-medium text-lg">Read More</button>
+        </div>
+      </div>
+
+    </section>
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
