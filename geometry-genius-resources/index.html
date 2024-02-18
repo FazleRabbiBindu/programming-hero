@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/tailwind.config.js">
+
+    <title>Geometry Gen</title>
+</head>
+
+<body class="m-8 ">
+    <!-- main -->
+    <main class="flex flex-col md:flex-row lg:flex-row sm:flex-col">
+        <!-- shape -->
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Triangle -->
+            <div class="card w-80 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="./images/triangle.png" alt="Shoes"
+                        class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Triangle</h2>
+                    <p>Area(A) = 0.5 X b X  h</p>
+                    <div class="">
+                        <input id="triangleBase" class="w-20 p-1" type="text" placeholder="b">
+                        <span>cm</span>
+                        <input id="triangleHeight" class="w-20 p-1" type="text" placeholder="h">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <p>Area: <span id="triangleArea"></span> cm<sup>2</sup></p>
+                    </div>
+                    <div class="card-actions w-full">
+                        <button onclick="triangleCalculate()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rectangle -->
+            <div class="card w-80 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                        class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Parallelogram -->
+            <div class="card w-80 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                        class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Parallelogram -->
+            <div class="card w-80 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                        class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- calculator -->
+        <div class="w-80 border-2 border-gray-700 rounded-md p-6">
+            <h1>Area Calculator</h1>
+        </div>
+    </main>
+<script src="./styles/triangle.js"></script>
+</body>
+
+</html>
